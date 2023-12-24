@@ -95,6 +95,7 @@
           <h1 class="card-title pricing-card-title">￥20 <small class="text-muted">/ 份</small></h1>
           <ul class="list-unstyled mt-3 mb-4">
             <li>精通SPI(必学)</li>
+            <button  type="button" class="btn btn-info mt-2" data-toggle="modal" data-target="#modalzl">更多信息</button>
             <li>购买后24内发送到备注邮箱</li>
           </ul>
           <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#exampleModal">购买 (扫码备注邮箱)</button>
@@ -117,7 +118,7 @@
           <h5>正在筹备内容</h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="#">线程池</a></li>
-            <li><a class="text-muted" href="#">Go社区</a></li>
+            <li><a class="text-muted" href="#">社区</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
@@ -134,7 +135,28 @@
       </div>
     </footer>
   </div>
-
+<div class="modal fade" id="modalzl" tabindex="-1" aria-labelledby="modalzlLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalzl">资料详情</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-warning" role="alert">
+            SPI内容:
+            思想->使用->原理->源码->应用->实战->面试回答
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">知道了</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -173,6 +195,7 @@
     </div>
   </div>
   <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/js/bootstrap.js">
     // https://api.bilibili.com/x/relation/stat?vmid=152686439
 

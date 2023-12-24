@@ -33,10 +33,14 @@
 
   <!-- Custom styles for this template -->
   <link href="./pricing/pricing.css" rel="stylesheet">
+  
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/bootstrap.js"></script>
+  
 </head>
 
 <body>
-
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal">xhyOVO · 小胡鸭</h5>
     <!-- <nav class="my-2 my-md-0 mr-md-3">
@@ -94,10 +98,9 @@
         <div class="card-body">
           <h1 class="card-title pricing-card-title">￥0 <small class="text-muted">/ 份</small></h1>
           <ul class="list-unstyled mt-3 mb-4">
-            <li>所有学习资料</li>
             <li>购买后24内发送到备注邮箱</li>
-            <li>支持售后</li>
-            <li>支持后期更新</li>
+            
+            <button  type="button" class="btn btn-info mt-2" data-toggle="modal" data-target="#modalzl">更多信息</button>
           </ul>
           <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#exampleModal">购买 (扫码备注邮箱)</button>
 
@@ -136,7 +139,28 @@
       </div>
     </footer>
   </div>
-
+  <div class="modal fade" id="modalzl" tabindex="-1" aria-labelledby="modalzlLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalzl">资料详情</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-warning" role="alert">
+            SPI内容:
+            思想->使用->原理->源码->应用->实战->面试回答
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">知道了</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -174,11 +198,7 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
-  <script src="./assets/js/bootstrap.js">
-    // https://api.bilibili.com/x/relation/stat?vmid=152686439
 
-  </script>
 
 </body>
 

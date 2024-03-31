@@ -41,6 +41,7 @@
 </head>
 
 <body>
+
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal">xhyOVO · 小胡鸭</h5>
     <!-- <nav class="my-2 my-md-0 mr-md-3">
@@ -64,17 +65,17 @@
     <div class="card-deck mb-3 text-center">
       <div class="card mb-4 shadow-sm">
         <div class="card-header">
-          <h4 class="my-0 font-weight-normal">技术指导</h4>
+          <h4 class="my-0 font-weight-normal">社区会员</h4></h4>
         </div>
         <div class="card-body">
           <h1 class="card-title pricing-card-title">￥70 <small class="text-muted">/ 永久</small></h1>
           <ul class="list-unstyled mt-3 mb-4">
            
-            <li style="font-weight: 700; ">要想拉开差距 本质就是信息差</li>
-            <li>内容：</li>
-            <li style="font-weight: 700; ">学习路线/经验/方法/简历/求职/项目答疑(我出的)</li>
+            <li style="font-weight: 700; ">社区内容</li></li>
+            <li>学习路线/经验/方法/简历/求职/项目答疑(我出的)</li>
+            <button  type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalzl-community">更多信息</button>
           </ul>
-          <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#exampleModal" style="margin-top: 31px;">购买 (扫码备注vx)</button>
+          <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#exampleModal" >购买 (扫码备注vx)</button>
         </div>
       </div>
       <div class="card mb-4 shadow-sm">
@@ -87,7 +88,6 @@
             <li  style="font-weight: 700; ">把握每一次的面试机会</li>
             <li>该服务面向找实习/校招的同学</li>
             <li>提高沟通技巧/知识宽广度</li>
-            
             <button  type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalzl-interview">更多信息</button>
           </ul>
           <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#exampleModal">购买 (扫码备注vx)</button>
@@ -145,6 +145,32 @@
     </footer>
   </div>
   
+  <div class="modal fade" id="modalzl-community" tabindex="-1" aria-labelledby="modalzlLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalzl">社区详情</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-primary" role="alert">
+            <div>社区提供包含但不限于以下服务:</div>
+            <br>
+            <div>简历/求职/八股/问答/项目答疑/Code Review/其他付费8折/...</div>
+            <br>
+            <div>购买后即可拉你进社区</div>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">知道了</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="modal fade" id="modalzl-interview" tabindex="-1" aria-labelledby="modalzlLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
